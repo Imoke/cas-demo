@@ -1,0 +1,11 @@
+server:
+   port: 8081
+cas:
+    client-host-url: http://cas.clienta.com:8081
+    server-url-prefix: https://cas.server.com:8443/cas
+    server-login-url: https://cas.server.com:8443/cas/login
+    authentication-url-patterns: /*
+    use-session: true
+    validation-type: cas
+client:
+  redirect-url: http://cas.clienta.com:3000
